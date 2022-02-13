@@ -1,0 +1,458 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos Generales*/
+
+body{
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+ /*Barra de navegación*/
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.encabezado{
+    background-color:darkslategray;
+    color: whitesmoke;
+    padding: 2px 0px;
+    width: 100%;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    height:50px ;
+    width:100px ;
+    display: flex;
+    align-self: flex-start;
+}
+
+.nav, ul, li, a{
+    display: flex; 
+    justify-content:space-evenly;
+    align-items: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 18px;
+    width: 100%;
+    padding: 3px 0px;
+    background-color: white;
+}
+
+.carrito{
+    height: 25px;
+    width: 30px;
+   
+}
+.hover:hover{
+    opacity: 0.5;
+    padding-left: 5px;
+    font-size:20px;
+    color: rgb(199, 184, 171);
+}
+    
+
+/*Fin barra de navegación*/
+
+/* Seccion inicio */
+
+#section1,.parrafo1{
+    padding: 50px 0px 20px 0px;
+    letter-spacing: 10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color:darkslategray; 
+}
+
+.imgsection1{
+    width: 100%;
+    padding: 60px 0px;
+    border: 2px solid whitesmoke;
+    border-radius: 2px;
+}
+
+
+.imgsection1:hover{
+    transition: all 0.3s;
+    border:  6px solid white;
+}
+
+/*Fin seccion inicio*/
+
+/*Títulos de secciones en landing page*/
+
+.secciones-titulos{
+    background-color: rgb(199, 184, 171);
+    padding: 20px 0px;
+    margin: 0px 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    width: 100%;
+    color: darkslategray;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+    display: block;
+}
+
+/*Sección productos*/
+
+#productos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.parrafo-productos{
+    background-color: darkslategray;
+    padding: 14px;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    letter-spacing:  10px; 
+    color: whitesmoke;
+    text-decoration-style: double;
+}
+
+.parrafo-productos:hover{
+    transition: all 0.3s;
+    border: 8px solid darkslategray;
+    border-radius: 0px;
+}
+
+.imgsection2{
+    height:300px;
+    width: 300px;  
+    border: 2px solid whitesmoke;
+    border-radius: 2px;
+}
+
+.imgsection2:hover{
+    transition: all 0.3s;
+    border:  6px solid white;
+}
+
+/*Seccion Acerca de*/
+
+.p-acercade{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: darkslategrey;
+    line-height: 2.5;
+}
+
+/*Seccion locales*/
+
+.h3-locales{
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.p-locales{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: darkslategrey;
+    padding:10px 0px;
+    margin: 10px 0px;
+}
+
+/*Seccion contacto, formulario de contacto*/
+
+form{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2.5;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+button{
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px;
+    color: white;
+    background-color: darkslategray;
+    cursor: pointer;
+}
+
+button:hover{
+    padding:9px;
+    transform:scaleZ(1);
+    transition: all 0.2s;
+    opacity: 0.5;
+}
+
+/*Footer*/
+
+footer{
+    background-color: white;
+    
+}
+
+.p-footer{
+    background-color:darkslategray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.foot-image{
+    height: 40px;
+    width: 40px;  
+}
+
+.footerbox{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 40px;
+}
+.footer-1{
+    display: flex;
+    flex-direction: column;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: darkslategrey;  
+    line-height: 2;
+}
+ 
+.footer-2{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:rgb(199, 184, 171);
+}
+.nav-footer,.ulfoot,.lifoot{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    
+}
+.afoot{
+    font-size: 17px;
+    margin-right: 10px;
+    color: darkslategrey;  
+}
+
+.afoot:hover{
+    color: rgb(199, 184, 171);
+}
+/*Fin footer*/
+
+/* Pages-productos*/
+
+
+.listas{
+    background: none;
+    display: block;
+}
+
+.precio{
+    color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imgstyle{
+    border: 3px solid whitesmoke;
+    border-radius: 4px;
+}
+
+.imgstyle:hover{
+    transition: all 0.3s;
+    border:  8px solid rgb(212, 199, 187);
+    border-radius: 0px;
+}
+
+.carrito-container{
+    padding:100px;
+    font-size: 30px;
+}
+
+/* grid layout index*/
+
+.container-index {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.4fr 2.2fr 0.4fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "header header header"
+      "main main main"
+      "footer footer footer"; 
+  }
+  .header { grid-area: header; }
+  .main { grid-area: main; }
+  .footer { grid-area: footer; }
+
+/* grid indumentaria*/
+
+  .container-pages {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.4fr 2.2fr 0.4fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header"
+      "productos productos productos"
+      "footer footer footer"; 
+  }
+  .header { grid-area: header; }
+  .footer { grid-area: footer; }
+  .productos { grid-area: productos; }
+
+  .container-catalogo {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "producto1 producto2 producto3"
+      "producto4 producto5 producto6"
+      "producto7 producto8 producto9";
+  }
+  
+  .producto1 { 
+      grid-area: producto1; }
+  
+  .producto2 { 
+      grid-area: producto2; }
+  
+  .producto3 { 
+      grid-area: producto3; }
+  
+  .producto4 { 
+      grid-area: producto4; }
+  
+  .producto5 { 
+      grid-area: producto5; }
+  
+  .producto6 { 
+      grid-area: producto6; }
+  
+  .producto7 { 
+      grid-area: producto7; }
+  
+  .producto8 { 
+      grid-area: producto8; }
+  
+  .producto9 { 
+      grid-area: producto9; }
+  
+
+  #indumentaria, #accesorios, #calzados{
+      padding: 100px 0px;
+  }
+
+/* media queries para mobile*/
+
+  @media screen and (max-width:480px){
+        body{
+            width: 100%;   
+        }
+        .encabezado{
+            width: 100%;
+        }
+        header{
+            width:100%; 
+            
+        }
+        .logo{
+            width: 55px;
+            height: 30px;
+        }
+
+        nav ul li a{
+            font-size: 12px;
+        }
+    
+        .carrito{
+            height: 15px;
+            width: 15px;
+        }
+
+        .parrafo1{
+            font-size: 20px;
+            letter-spacing: 0px;
+            margin: 0%;
+        }
+
+        .imgsection1{
+            width: 80%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #productos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container-catalogo{
+            display: flex;
+            flex-direction: column;
+        }
+        .secciones-titulos{
+            padding: 8px;
+            font-size:10px;
+        }
+
+        .imgsection2{
+            width: 200px;
+            height: 200px;
+        }
+
+        .parrafo-productos{
+            font-size: 10px;
+        }
+        .p-acercade {
+            font-size: 15px;
+            padding: 0px 10px;
+        }
+
+        .h3-locales, .p-locales{
+            font-size: 12px;
+        }
+       form{
+           display: flex;
+           justify-content: flex-start;
+           align-items:center;
+           margin-left: 0px;
+           padding: 0px;
+       }
+        
+        .nav-footer, .footer-1{
+            display: none;
+        }
+
+        .footer-2{
+            margin-left: 30%;
+            font-size: 10px;
+        }
+       
+  }
