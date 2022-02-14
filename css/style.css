@@ -141,9 +141,10 @@ header{
 }
 
 .imgsection2:hover{
-    transition: all 0.3s;
-    border:  6px solid white;
+    transition:all 0.3s;
+    border:6px solid whitesmoke;
 }
+
 
 /*Seccion Acerca de*/
 
