@@ -4,164 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="../css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Dongle&family=Roboto:wght@100&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css">
-<title>Malena clothes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../style.css">
+    <title>Malena clothing</title>
 </head>
-<body> 
-    <!-- grid-->
-    <div class="container-pages">
-        <div class="header"></div>
-        <div class="main"></div>
-        <div class="footer"></div>
+<body>
+  <header>
+    <p class="text-center background-header">3 cuotas sin interés + envío a todo el país</p>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../images/logo1.png" alt="logo1" width="150" height="80"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="indumentaria.html">Indumentaria</a></li>
+                  <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
+                  <li><a class="dropdown-item" href="calzado.html">Calzado</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Fin Nav bar-->
+  </header>
+      <!-- seccion productos-->
+  <main>
+    <a href="../pages/carrito.html"><img class="sticky-top" src="../images/carrito1.jpg" alt="carritodecompras" width="40" height="40"></a>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="listas text-center">
+            <li><a class="productos-links" href="carrito.html"><img src="../images/blusa.jpg" alt="blusa" height="260" width="230" class="imgstyle"></li>
+            <li><p class="nombres-productos">Blusa Carmen</p></li>
+            <li><p class="precio">$2000<p></a></li>
+            <li><a href="carrito.html"><button class="button-productos">COMPRAR</button></a></li>
+          </ul>
+        </div>
+        
+        <div class="col">
+          <ul class="listas text-center">
+            <li><a class="productos-links" href="carrito.html"><img src="../images/saco.jpg" alt="saco" height="260" width="230" class="imgstyle"></li>
+            <li><p class="nombres-productos">Saco Lola</p></li>
+            <li><p class="precio">$3500</p></a></li>
+            <li><a href="carrito.html"><button class="button-productos">COMPRAR</button></a></li>
+        </ul>
+        </div>
+        
+        <div class="col">
+          <ul class="listas text text-center">
+            <li><a class="productos-links" href="carrito.html"><img src="../images/sweater.jpg" alt="sweater" height="260" width="230" class="imgstyle"></li>
+            <li><p class="nombres-productos">Sweater Sofía</p></li>
+            <li><p class="precio">$4000</p></a></li>
+            <li><a href="carrito.html"><button class="button-productos">COMPRAR</button></a></li>
+        </ul>
+        </div>
+      </div>
     </div>
 
-    <!-- header -->
-    <header>
-            <p class="encabezado">3 cuotas sin interés con todas las tarjetas + envío a todo el país</p>
-            <nav>                
-                <ul>
-                    <li><a href="../index.html"> <img class="logo" src="../imagenes/logo1.png" alt="logo"></a></li>
-                    <li><a href="../index.html" class="hover">Inicio</a></li>
-                    <li><a href="../index.html #productos" class="hover">Productos</a></li>
-                    <li><a href="../index.html #acercade" class="hover">Acerca de</a></li>  
-                    <li><a href="../index.html #locales" class="hover">Locales</a></li>
-                    <li><a href="../index.html #contacto" class="hover">Contacto</a></li>
-                    <li><a href="../pages/carrito.html" class="hover"><img src="../imagenes/carrito1.jpg" alt="carrito" class="carrito"></a></li>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="listas text-center">
+            <li><a class="productos-links" href="carrito.html"><img src="../images/remera.jpeg" alt="pantalonbeige" height="260" width="230" class="imgstyle"></li>
+            <li><p class="nombres-productos">Remera Indigo</p></li>
+            <li><p class="precio">$6000</p></a></li>
+            <li><a href="carrito.html"><button class="button-productos">COMPRAR</button></a></li>
+        </ul>
+        </div>
+        <div class="col">
+         <ul class="listas text-center">
+            <li><a class="productos-links" href="carrito.html"><img src="../images/sweater2.jpg" alt="pantalonbeige" height="260" width="230" class="imgstyle"></li>
+            <li><p class="nombres-productos">Sweater Lucía</p></li>
+            <li><p class="precio">$6000</p></a></li>
+            <li><a href="carrito.html"><button class="button-productos">COMPRAR</button></a></li>
+        </ul>
+        </div>
+        <div class="col">
+          <ul class="listas text-center">
+            <li><a class="productos-links" href="carrito.html"><img src="../images/polera.jpg" alt="pantalonbeige" height="260" width="230" class="imgstyle"></li>
+            <li><p class="nombres-productos">Polera Ana</p></li>
+            <li><p class="precio">$6000</p></li>
+            <li><a href="carrito.html"><button class="button-productos">COMPRAR</button></a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="listas text-center">
+            <li><a class="productos-links" href="../pages/carrito.html"><img src="../images/pantalon2.jpg" alt="pantalon2" height="260" width="230" class="imgstyle"></li>
+            <li><p class="nombres-productos">Jean Alicia</p></li>
+            <li><p class="precio">$6000</p></li>
+            <li><a href="../pages/carrito.html"><button class="button-productos">COMPRAR</button></a></li>
+        </ul>
+        </div>
+        <div class="col">
+          <ul class="listas text-center">
+            <li><a class="productos-links" href="../pages/carrito.html"><img src="../images/pantalon1.jpg" alt="jean" height="260" width="230" class="imgstyle"></li>
+            <li><p class="nombres-productos">Pantalón Ambar</p></li>
+            <li><p class="precio">$6000</p></a></li>
+            <li><a href="../pages/carrito.html"><button class="button-productos">COMPRAR</button></a></li>
+        </ul>
+        </div>
+        <div class="col">
+          <ul class="listas text-center">
+            <li><a class="productos-links" href="../pages/carrito.html"><img src="../images/short.jpg" alt="short" height="260" width="230" class="imgstyle"></li>
+            <li><p class="nombres-productos">Short India</p></li>
+            <li><p class="precio">$6000</p></a></li>
+            <li><a href="../pages/carrito.html"><button class="button-productos">COMPRAR</button></a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+      <!-- Fin seccion productos-->
+
+      <!-- Footer-->
+
+  <footer>
+    <p class="background-header text-center">Envíos a todo el país</p>  
+          <div class="d-flex justify-content-evenly">
+  
+              <div>
+                <ul class="ul-footer">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html #nosotros">Nosotros</a></li>
+                    <li><a href="../index.html #locales">Locales</a></li>  
+                    <li><a href="../index.html #contacto">Contacto</a></li>
+                    <li><a href="../index.html #productos">Productos</a></li>
                 </ul>
-            </nav>
-    </header>
-    <!-- Fin header -->
-
-    <!-- Section-->
-    <main>
-        <section id="indumentaria">
-            <div class="container-catalogo">
-                <div class="producto1">
-                    <ul class="listas">
-                        <li><a href="../pages/carrito.html"><img src="../imagenes/blusa.jpg" alt="blusa" height="260" width="230" class="imgstyle"></li>
-                        <li><p>Blusa Carmen</p></li>
-                        <li><p class="precio">$2000<p></a></li>
-                        <li><a href="../pages/carrito.html"><button>COMPRAR</button></a></li>
-                    </ul>
-                </div>
-          
-                <div class="producto2">
-                    <ul class="listas">
-                        <li><a href="../pages/carrito.html"><img src="../imagenes/saco.jpg" alt="saco" height="260" width="230" class="imgstyle"></li>
-                        <li><p>Saco Lola</p></li>
-                        <li><p class="precio">$3500</p></a></li>
-                        <li><a href="../pages/carrito.html"><button>COMPRAR</button></a></li>
-                    </ul>
-                </div>
-
-                <div class="producto3">
-                    <ul class="listas">
-                        <li><a href="../pages/carrito.html"><img src="../imagenes/sweater.jpg" alt="sweater" height="260" width="230" class="imgstyle"></li>
-                        <li><p>Sweater Sofía</p></li>
-                        <li><p class="precio">$4000</p></a></li>
-                        <li><a href="../pages/carrito.html"><button>COMPRAR</button></a></li>
-                    </ul>
-                </div>
-
-                <div class="producto4">
-                    <ul class="listas">
-                        <li><a href="../pages/carrito.html"><img src="../imagenes/remera.jpeg" alt="pantalonbeige" height="260" width="230" class="imgstyle"></li>
-                        <li><p>Remera Indigo</p></li>
-                        <li><p class="precio">$6000</p></a></li>
-                        <li><a href="../pages/carrito.html"><button>COMPRAR</button></a></li>
-                    </ul>
-                </div>
-           
-                <div class="producto5">
-                    <ul class="listas">
-                        <li><a href="../pages/carrito.html"><img src="../imagenes/sweater2.jpg" alt="pantalonbeige" height="260" width="230" class="imgstyle"></li>
-                        <li><p>Sweater Lucía</p></li>
-                        <li><p class="precio">$6000</p></a></li>
-                        <li><a href="../pages/carrito.html"><button>COMPRAR</button></a></li>
-                    </ul>
-                </div>
-
-                <div class="producto6">
-                    <ul class="listas">
-                        <li><a href="../pages/carrito.html"><img src="../imagenes/polera.jpg" alt="pantalonbeige" height="260" width="230" class="imgstyle"></li>
-                        <li><p>Polera Ana</p></li>
-                        <li><p class="precio">$6000</p></li>
-                        <li><a href="../pages/carrito.html"><button>COMPRAR</button></a></li>
-                    </ul>
-                </div>
-
-                <div class="producto7">
-                    <ul class="listas">
-                        <li><a href="../pages/carrito.html"><img src="../imagenes/pantalon2.jpg" alt="pantalon2" height="260" width="230" class="imgstyle"></li>
-                        <li><p>Pantalon Ambar</p></li>
-                        <li><p class="precio">$6000</p></li>
-                        <li><a href="../pages/carrito.html"><button>COMPRAR</button></a></li>
-                    </ul>
-                </div>
-
-                <div class="producto8">
-                    <ul class="listas">
-                        <li><a href="../pages/carrito.html"><img src="../imagenes/pantalon1.jpg" alt="jean" height="260" width="230" class="imgstyle"></li>
-                        <li><p>Jean Alicia</p></li>
-                        <li><p class="precio">$6000</p></a></li>
-                        <li><a href="../pages/carrito.html"><button>COMPRAR</button></a></li>
-                    </ul>
-                </div>
-
-                <div class="producto9">
-                    <ul class="listas">
-                        <li><a href="../pages/carrito.html"><img src="../imagenes/short.jpg" alt="short" height="260" width="230" class="imgstyle"></li>
-                        <li><p>Short India</p></li>
-                        <li><p class="precio">$6000</p></a></li>
-                        <li><a href="../pages/carrito.html"><button>COMPRAR</button></a></li>
-                    </ul>
-                </div>
-
-            </div>     
-        </section>
-    </main>
-
-    <!-- Fin section -->
-
-    <!-- Footer -->
-
-    <footer>
-        <p class="p-footer">Envíos a todo el país</p>  
-            <div class="footerbox">
-                <div class="nav-footer">
-                    <ul class="ulfoot">
-                        <li class="lifoot"><a href="index.html" class="afoot">Inicio</a></li>
-                        <li class="lifoot"><a href="#productos" class="afoot">Productos</a></li>
-                        <li class="lifoot"><a href="#acercade" class="afoot">Acerca de</a></li>  
-                        <li class="lifoot"><a href="#locales" class="afoot">Locales</a></li>
-                        <li class="lifoot"><a href="#contacto" class="afoot">Contacto</a></li>
-                    </ul>
-                </div>
+              </div>
   
-                <div class="footer-2">
-                    <ul class="ulfoot">
-                        <li class="lifoot"><a href="index.html"><img class="logo" src="../imagenes/logo1.png" alt="logo"></a></li>
-                        <li class="lifoot"><p>Follow us</p></li>
-                        <li class="lifoot"><a href="https://instagram.com"><img src="../imagenes/i.jpg" alt="instagram" class="foot-image"></a></li>
-                    </ul>
-                </div> 
+              <div>
+                  <ul class="ul-footer">
+                      <li><a href="../index.html"><img class="logo" src="../images/logo1.png" alt="logo" width="110" height="50"></a></li>
+                      <li><p>Follow us</p></li>
+                      <li><a href="https://instagram.com"><img src="../images/i.jpg" alt="instagram" width="40" height="40"></a></li>
+                  </ul>
+              </div> 
   
-                <div class="footer-1">
-                    <p>Contactanos</p>
-                    <p>Tel:1234567</p>
-                    <p>Yerba Buena Shopping</p> 
-                </div>
-            </div>
-    </footer>
-
-    <!-- Fin footer -->
-
-</body>
+              <div class="p-foot">
+                  <p>Contactanos</p>
+                  <p>Tel:1234567</p>
+                  <p>Yerba Buena Shopping</p> 
+              </div>  
+          </div>
+  </footer>
+  
+   <!-- Fin Footer-->
+  
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  
+  
+    </body>
 </html>
+
+
+
+  

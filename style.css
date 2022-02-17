@@ -1,0 +1,129 @@
+
+/* estilos generales*/
+
+.background-header{
+    background-color:darkslategrey;
+    color:whitesmoke;
+    padding: 20px 0px;
+    margin: 10px 0px;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px;
+  }
+
+.background-titulos{
+    background-color:rgba(216, 206, 178, 0.822);
+    color: darkslategray;
+    padding: 15px 0px;
+    border-radius: 5px;
+    border:solid 2px whitesmoke;
+  }
+
+.parrafo-nosotros{
+    margin:10px 40px;
+    line-height: 2;
+}
+
+.form{
+    margin: 0px 40px;
+  }
+
+.card{
+    position: relative;
+    padding: 0;
+    width: 500px;
+    max-width: 90vw;
+    margin: 25px auto;
+  }
+
+.card:hover{
+    border-left:solid 8px whitesmoke;
+    border-bottom: solid 4px whitesmoke;
+    transition:all 1s;
+  } 
+
+.card::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url(images/aros.jpg);
+    background-size: 100% 100%;
+    filter: blur(15px) saturate(2); /* KEY */
+  }
+  
+  .card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+
+  .ul-footer{
+    list-style:none;
+    text-align: center;
+  }
+
+  .ul-footer li a{
+    color: rgba(216, 206, 178, 0.822);
+    text-decoration: none;
+  }
+
+  .ul-footer li a:hover{
+    color: darkslategrey;
+  }
+
+  .p-foot{
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* estilos pages*/
+
+  .listas{
+    list-style: none;
+    text-decoration: none;
+    border: solid 1px rgba(216, 206, 178, 0.822);
+    border-radius: 3px;
+    padding:14px;
+    
+  }
+
+  .productos-links{
+    text-decoration: none;
+  }
+
+  .nombres-productos{
+    font-size: 20px;
+    color: darkslategray;
+  }
+
+  .nombres-productos:hover{
+    color: rgba(216, 206, 178, 0.822);
+  }
+
+  .col{
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-productos{
+    background-color: darkslategrey;
+    border-radius: 3px;
+    border: solid 1px whitesmoke;
+    color: white;
+  }
+
+  .button-productos:hover{
+    padding: 8px;
+    transition: all 1.5;
+  }
+
+  .precio{
+    color: saddlebrown;
+  }
+
+
+ 

@@ -4,155 +4,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Dongle&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
-    <title>Malena clothes</title>
+    <title>Malena clothing</title>
 </head>
-<body> 
-    
-    <!-- clases para grid-->
-    <div class="container-index">
-        <div class="header"></div>
-        <div class="main"></div>
-        <div class="footer"></div>
-    </div>
-       
+<body>
+  <header>
+    <p class="text-center background-header">3 cuotas sin interés + envío a todo el país</p>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo1" width="150" height="80"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav fs-6">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#locales">Locales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="pages/indumentaria.html">Indumentaria</a></li>
+                  <li><a class="dropdown-item" href="pages/accesorios.html">Accesorios</a></li>
+                  <li><a class="dropdown-item" href="pages/calzado.html">Calzado</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-    <!-- header -->
-    <header>
-    
-        <p class="encabezado">3 cuotas sin interés con todas las tarjetas + envío a todo el país</p>
-        <nav class="nav">                
-            <ul>
-                <li><a href="index.html"> <img class="logo" src="imagenes/logo1.png" alt="logo"></a></li>
-                <li><a href="index.html" class="hover">Inicio</a></li>
-                <li><a href="#productos" class="hover">Productos</a></li>
-                <li><a href="#acercade" class="hover">Acerca de</a></li>  
-                <li><a href="#locales" class="hover">Locales</a></li>
-                <li><a href="#contacto" class="hover">Contacto</a></li>
-                <li><a href="pages/carrito.html" class="hover"><img src="imagenes/carrito1.jpg" alt="carrito" class="carrito"></a></li>
-            </ul>
-        </nav>
-    </header>
+      </nav>
+      <!-- Fin Nav bar-->
+  </header>
 
-    <!-- Fin header -->
+  <main>
+      <!--Carousel-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/tres.jpg" class="d-block w-100" alt="malenaclothing">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel3.jpg" class="d-block w-100" alt="malenaclothingg">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+     <!-- Fin Carousel-->
 
-    <!-- Seccion carousel -->
+     <!-- seccion productos-->
+      <p id="#productos"class="background-header text-center fs-3">PRODUCTOS</p>
+     <div class="container d-flex justify-content-around">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <a href="pages/indumentaria.html"><img src="images/short.jpg" class="card-img-top" alt="indumentaria" width="260" height="300"></a>
+            <div class="card-body">
+              <p class="card-text background-titulos fs-4 text-center fw-bold">Indumentaria</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <a href="pages/accesorios.html"><img src="images/aros.jpg" class="card-img-top" alt="accesorios" width="260" height="300"></a>
+            <div class="card-body">
+              <p class="card-text background-titulos fs-4 text-center fw-bold">Accesorios</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <a href="pages/calzado.html"><img src="images/zapatillas.jpg" class="card-img-top" alt="calzado" width="260" height="300"></a>
+            <div class="card-body">
+              <p class="card-text background-titulos fs-4 text-center fw-bold">Calzado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <main>
-        <section id="section1">
-            <p class="parrafo1">New Collection 2022</p>
-            <a href="../malena+Cossio/pages/indumentaria.html"><img src="imagenes/tres.jpg" alt="modaverano" class="imgsection1"></a>     
-        </section>
+      <!-- Fin seccion productos-->
 
-    <!-- Fin seccion carousel -->
+      <!-- seccion Nosotros-->
+      <p id="nosotros" class="background-header text-center fs-4">NOSOTROS</p>
+      <p class="text-center parrafo-nosotros fs-5">Somos dos hermanas, amantes de la moda. Siempre soñamos con tener nuestra propia marca de ropa, incluso desde muy chiquitas jugábamos a "la vendedora" y podíamos estar horas así. Un día, ya teniendo unos veinte años nos lanzamos sin saber qué rumbo tomaría nuestro emprendimiento. Hoy estamos súper felices y agradecidas con nuestras clientas y queremos que cada una pueda sentirse única con los productos que les ofrecemos. "Siempre, siempre, siempre cree en ti misma. Porque si no lo haces, ¿quién lo hará, cariño?".<strong>Marilyn Monroe.</strong></p>
 
-    <!-- Seccion productos -->
+     <!-- Fin seccion Nosotros-->
 
-            <p class="secciones-titulos">PRODUCTOS</p>
-    
-        <section id="productos">
-            <ul class="listas">
-                <li><a href="pages/indumentaria.html"><img src="imagenes/saco.jpg" alt="indumentaria"  class="imgsection2"></li>
-                <li><p class="parrafo-productos">INDUMENTARIA</p></a></li>
-            </ul>
+      <!-- seccion Locales-->
+      <p id="locales" class="background-header text-center fs-4">LOCALES</p>
+      <div class="container d-flex justify-content-around text text-center">
+          <div class="row">
+            <div class="col-4">
+              <p class="fs-5 fw-bold background-titulos">TUCUMAN</p>
+              <p class="fs-6  ">Yerba Buena Shopping-Lunes a Domingos de 10 a 21 hs</p>
+            </div>
+            <div class="col-4">
+              <p class="fs-5 fw-bold background-titulos">CORDOBA</p>
+              <p class="fs-6">Shopping Nueva Córdoba-Lunes a Domingos de 10 a 21 hs</p>
+            </div>
+            <div class="col-4">
+             <p class="fs-5 fw-bold background-titulos">ROSARIO</p>
+             <p class="fs-6">Alto Rosario Shopping-Lunes a Domingos de 10 a 21 hs</p>
+            </div>
+         </div>
+    </div>
+     <!-- Fin seccion Locales-->
 
-            <ul class="listas">
-                <li><a href="pages/accesorios.html"><img src="imagenes/anteojos.jpg" alt="accesorios" class="imgsection2"></li>
-                <li><p class="parrafo-productos">ACCESORIOS</p></a></li>
-            </ul>
-             
-            <ul class="listas">
-                <li><a href="pages/calzado.html"><img src="imagenes/zapatillas.jpg" alt="accesorios" class="imgsection2"></li>
-                <li><p class="parrafo-productos">CALZADO</p></a></li>
-            </ul>
-        </section>
+    <!--seccion contacto-->
+      <p id="contacto" class="background-header text-center fs-4">CONTACTO</p>
+      <p class="text-center background-titulos">Envíanos un mensaje</p>
+    <div class="form">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Tu Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <button type="button" class="btn btn-light">Enviar</button>
+      </div>
+    </div>
 
-    <!-- Fin seccion productos --> 
+    <!-- Fin seccion contacto-->
 
-    <!-- seccion acerca de --> 
+  </main>
 
-        <section id="acercade">
-            <p class="secciones-titulos">NOS PRESENTAMOS</p>
-            <p class="p-acercade">Somos dos hermanas, amantes de la moda. Siempre soñamos con tener nuestra propia marca de ropa, incluso desde muy chiquitas jugábamos a "la vendedora" y podíamos estar horas así. Un día, ya teniendo unos veinte años nos lanzamos sin saber qué rumbo tomaría nuestro emprendimiento. Hoy estamos súper felices y agradecidas con nuestras clientas y queremos que cada una pueda sentirse única con los productos que les ofrecemos. "Siempre, siempre, siempre cree en ti misma. Porque si no lo haces, ¿quién lo hará, cariño?".<strong>Marilyn Monroe.</strong></p>
-        </section>
+    <!--Footer-->
 
-    <!-- fin seccion acerca de-->   
+  <footer>
+      <p class="background-header text-center">Envíos a todo el país</p>  
+        <div class="d-flex justify-content-evenly">
 
-    <!-- Seccion Locales -->    
-    
-        <section id="locales">
-            <p class="secciones-titulos">LOCALES</p>
-            <h3 class="h3-locales">Tucumán</h3><p class="p-locales">Yerba Buena Shopping-Lunes a Domingos de 10 a 21 hs</p>
-            <h3 class="h3-locales">Rosario</h3><p class="p-locales">Alto Rosario Shopping-Lunes a Domingos de 10 a 21 hs</p>
-            <h3 class="h3-locales">Cordoba</h3><p class="p-locales">Shopping Nueva Córdoba-Lunes a Domingos de 10 a 21 hs</p>
-        </section>
-
-    <!-- fin Seccion Locales -->   
-    
-    <!-- Seccion Contacto -->    
-
-        <section id="contacto">
-            <p class="secciones-titulos">ENVÍANOS UN MENSAJE</p>
-                <form action="text">
-                    Nombre:
-                        <br />
-                    <input type="text" name="nombre" size="20">
-                        <br />
-                     Email:
-                        <br />
-                    <input type="text" name="email" size="20">
-                        <br />
-                    Tu mensaje:
-                        <br />
-                    <input type="text" name="mensaje" size="40">
-                        <br/>
-                    <button><input type="submit" value="Enviar"></button>
-                        <br>
-                </form>
-        </section>
-
-    <!-- Fin Seccion Contacto -->  
-    </main>
-   
-    <!-- Footer -->
-
-    <footer>
-      <p class="p-footer">Envíos a todo el país</p>  
-        <div class="footerbox">
-
-            <div class="nav-footer">
-                <ul class="ulfoot">
-                    <li class="lifoot"><a href="index.html" class="afoot">Inicio</a></li>
-                    <li class="lifoot"><a href="#productos" class="afoot">Productos</a></li>
-                    <li class="lifoot"><a href="#acercade" class="afoot">Acerca de</a></li>  
-                    <li class="lifoot"><a href="#locales" class="afoot">Locales</a></li>
-                    <li class="lifoot"><a href="#contacto" class="afoot">Contacto</a></li>
+            <div>
+                <ul class="ul-footer">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#locales">Locales</a></li>  
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#productos">Productos</a></li>
                 </ul>
             </div>
 
-            <div class="footer-2">
-                <ul class="ulfoot">
-                    <li class="lifoot"><a href="index.html"><img class="logo" src="imagenes/logo1.png" alt="logo"></a></li>
-                    <li class="lifoot"><p>Follow us</p></li>
-                    <li class="lifoot"><a href="https://instagram.com"><img src="imagenes/i.jpg" alt="instagram" class="foot-image"></a></li>
+            <div>
+                <ul class="ul-footer">
+                    <li><a href="index.html"><img class="logo" src="images/logo1.png" alt="logo" width="110" height="50"></a></li>
+                    <li><p>Follow us</p></li>
+                    <li><a href="https://instagram.com"><img src="images/i.jpg" alt="instagram" width="40" height="40"></a></li>
                 </ul>
             </div> 
 
-            <div class="footer-1">
+            <div class="p-foot">
                 <p>Contactanos</p>
                 <p>Tel:1234567</p>
                 <p>Yerba Buena Shopping</p> 
             </div>  
         </div>
-</footer>
+  </footer>
 
-    <!-- Fin Footer -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
