@@ -13,13 +13,14 @@
   font-family: var(--principal-font);
  }
 
+/*Media querys*/
 
   @media screen and (max-width:576px){
     #nosotros{
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin:0px;
+      margin:5px 0px;
     }
   }
 
@@ -186,6 +187,7 @@
   }
 
  .carrito{
+   border-radius: 102px;
     animation: carrito 3s;
     animation-iteration-count: 4;
     animation-direction: alternate-reverse;
@@ -199,8 +201,8 @@
       transform: translateY(50px);  
     }
 }
-
-
+  /*grid layout*/
+  
   .grid-container {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
