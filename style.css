@@ -37,11 +37,13 @@
   }
 
 .background-titulos{
-    background-color:rgb(206, 197, 188);
+    background-color:whitesmoke;
     color:rgb(77, 119, 119);
     padding: 15px 0px;
     border-radius: 5px;
     border:solid 2px whitesmoke;
+    font-family: var(--principal-font);
+    letter-spacing: 2px;
   }
 
 .images-carousell{
@@ -53,7 +55,8 @@
     line-height: 2;
     text-align: justify;
     padding: 10px 40px;
-  
+    font-family: var(--principal-font);
+    color:rgb(77, 119, 119);
    }
 
 .nosotros{
@@ -72,11 +75,12 @@
 .card{
     padding:5px;
     width: 100%;
+    background-color: rgb(206, 197, 188);
     
   }
 
 .card-img-top:hover{
-    transform:translate(8px, 5%);
+    transform:translate(5px, 3%);
     transition:all 0.5s;
   } 
 
@@ -139,6 +143,7 @@
     border: solid 1px rgb(206, 197, 188);
     border-radius: 3px;
     padding:14px;
+    font-family: var(--principal-font);
     
   }
 
@@ -183,28 +188,27 @@
  }
 
  @keyframes carrito {
-   
   from{
-      transform:translateY(120px) ;
-  
+      transform:translateY(120px);
     }
    to{
       transform: translateY(50px);  
-   }
+    }
 }
 
 
-.grid-container {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.6fr 2fr 0.4fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
-}
+  .grid-container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 2fr 0.4fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+  }
 
 .header { grid-area: header; }
 
