@@ -23,6 +23,9 @@
       align-items: center;
       margin:5px 0px;
     }
+    .encabezado{
+      font-size: 12px;
+    }
   }
 
   @media screen and (max-width:768px){
@@ -58,6 +61,7 @@
     line-height: 2;
     text-align: justify;
     padding: 10px 40px;
+    font-size: 18px;
     font-family: var(--principal-font);
     color:var(--bg-green-color);
    }
@@ -67,13 +71,18 @@
   flex-direction: row;
   align-items: center;
   justify-content:space-around;
-  
-}
+  }
 
+.img-nosotros{
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius:3px;
+  border:solid 1px rgb(228, 228, 218);
+}
 .secciones{
   width: 100%;
   margin: 60px 0px;
-  }
+}
 
  
 .card{
@@ -81,8 +90,8 @@
     background-color: rgb(228, 228, 218);
     width:300px;
     height:400px;
-    margin-bottom: 40px;
-  }
+    margin-bottom: 60px;
+}
 
 .card-img-top:hover{
     transform:translate(5px, 3%);
@@ -100,7 +109,7 @@
     z-index: -1;
     background-image: url(images/aros.jpg);
     background-size: 100% 100%;
-    filter: blur(15px) saturate(2); /* KEY */
+    filter: blur(15px) saturate(2); 
   }
   
   .card-img-top {
@@ -111,10 +120,10 @@
   }
 
   .locales{
-    background-color: white;
+    background-color: rgb(228, 228, 218);
     color:var(--bg-green-color);
     padding: 10px;
-    border:solid 3px rgb(206, 197, 188);
+    border:solid 1px rgb(206, 197, 188);
     font-family: var(--principal-font);
   }
 
