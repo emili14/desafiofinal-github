@@ -1,0 +1,56 @@
+@import '../base/variables';
+@import '../base/listas';
+
+.carrito{
+    border-radius: 102px;
+    animation: carrito 3s;
+    animation-iteration-count: 4;
+    animation-direction: alternate-reverse;
+ }
+ 
+  @keyframes carrito {
+   from{
+       transform:translateY(120px);
+     }
+    to{
+       transform: translateY(50px);  
+     }
+ }
+
+ .listas{
+    list-style: none;
+    text-decoration: none;
+    border: solid 1px rgb(206, 197, 188);
+    border-radius: 3px;
+    padding:14px;  
+}
+  
+  .productos-links{
+    text-decoration: none;
+  }
+  
+  .nombres-productos{
+        font-size: 20px;
+        color:nth($colores,1);
+            &:hover{
+                color:nth($colores, 4) ;
+             }
+  }
+  
+  .col{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-productos{
+    background-color:rgb(206, 197, 188);
+    border-radius: 3px;
+    border: solid 1px whitesmoke;
+    color:whitesmoke;
+  }
+  
+  .button-productos:hover{
+    padding: 3px;
+    opacity: 0.7;
+  }
+  

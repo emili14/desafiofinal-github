@@ -1,0 +1,154 @@
+.carrito {
+  border-radius: 102px;
+  animation: carrito 3s;
+  animation-iteration-count: 4;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes carrito {
+  from {
+    transform: translateY(120px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+.listas {
+  list-style: none;
+  text-decoration: none;
+  border: solid 1px #cec5bc;
+  border-radius: 3px;
+  padding: 14px;
+}
+
+.productos-links {
+  text-decoration: none;
+}
+
+.nombres-productos {
+  font-size: 20px;
+  color: #4d7777;
+}
+.nombres-productos:hover {
+  color: #cec5bc;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+
+.button-productos {
+  background-color: #cec5bc;
+  border-radius: 3px;
+  border: solid 1px whitesmoke;
+  color: whitesmoke;
+}
+
+.button-productos:hover {
+  padding: 3px;
+  opacity: 0.7;
+}
+
+header .encabezado, main .encabezado, footer .encabezado {
+  background-color: #4d7777;
+  color: #cec5bc;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+footer .ul-foot, #locales, #nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#locales .locales, #productos .card {
+  background-color: #cec5bc;
+  color: #4d7777;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 2px whitesmoke;
+}
+
+@media screen and (max-width: 576px) {
+  header, main, footer {
+    font-size: 10px;
+    /*reveeeeeerrrrr*/
+  }
+}
+
+ul li {
+  list-style: none;
+}
+ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: #cec5bc;
+}
+ul li a:hover {
+  color: #4d7777;
+}
+
+.secciones {
+  width: 100%;
+  margin: 60px 0px;
+}
+
+#nosotros .parrafo-nosotros {
+  font-size: 20px;
+  color: #4d7777;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#productos .card {
+  width: 280px;
+  height: 400px;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 576px) {
+  #productos {
+    /*reveeeer*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card-img-top:hover {
+  transform: translate(5px, 3%);
+  transition: all 0.5s;
+}
+
+.card::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(images/aros.jpg);
+  background-size: 100% 100%;
+  filter: blur(15px) saturate(2);
+}
+
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#locales .locales {
+  padding: 10px;
+}
+
+.form {
+  padding: 20px 460px;
+}
+
+/*# sourceMappingURL=style.css.map */
