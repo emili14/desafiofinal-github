@@ -8,10 +8,19 @@ header, main, footer {
         @extend %encabezados;
         }
         @media screen and (max-width:576px){
-            font-size:nth($fuentes ,1 );    /*reveeeeeerrrrr*/
+            font-size:nth($fuentes ,1 );   
         }
     }
-       
+
+main{
+    h1 {
+        color:nth($colores, 1 );
+        font-family: $font-family;
+        background-color: nth($colores, 3 );
+        padding: 30px 0px;
+    }
+}
+
 ul{
 
     li{
@@ -19,7 +28,7 @@ ul{
         a{
             font-family: $font-family;
             text-decoration: none;
-            color:nth($colores, 4);
+            color:nth($colores, 5);
                 &:hover{
                 color:nth($colores, 1);
                 
@@ -39,6 +48,7 @@ ul{
         font-size: nth($fuentes , 3);
         color: nth($colores,1);
         font-family: $font-family;
+        line-height: 1.5;
     }
 }
 

@@ -1,8 +1,9 @@
 %encabezados{
     background-color: $bg-header;
-    color:nth($colores, 4);
+    color:nth($colores, 3);
     font-size: $font-size-header;
     letter-spacing:$header-letter-spacing; 
+    padding: 20px 0px;
 }
 
 %flex-row{
