@@ -61,7 +61,7 @@ ul{
         margin-bottom: 60px;
         @extend %titulos; 
     }
-    @media screen and (max-width:576px){   /*reveeeer*/
+    @media screen and (max-width:576px){  
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -103,6 +103,13 @@ ul{
 
 .form{
     padding:20px 460px;
+}
+
+@media screen and (max-width:576px){
+    .form{
+        @extend %flex-column;
+        padding:14px;
+    }
 }
 
 footer{

@@ -54,6 +54,12 @@
   }
       
 }
+
+footer{
+  .ul-foot{
+      @extend %flex-column;
+  }
+}
   
 
   
