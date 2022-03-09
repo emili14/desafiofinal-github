@@ -1,6 +1,6 @@
 %encabezados{
     background-color: $bg-header;
-    color:nth($colores, 3);
+    color:nth($colores, 4);
     font-size: $font-size-header;
     letter-spacing:$header-letter-spacing; 
     padding: 20px 0px;
@@ -20,12 +20,11 @@
     align-items: center;
 }
 %titulos{
-    background-color:nth($colores, 4);
-    color: nth($colores,1);
+    background-color:nth($colores, 2);
+    color: nth($colores,6);
     font-family:$font-family ;
     font-size: nth($fuentes, 3);
     padding: 10px;
     border-radius: 5px;
-    border:solid 2px whitesmoke;
-
+    border:solid 2px rgba(214, 201, 175, 0.589);
 }

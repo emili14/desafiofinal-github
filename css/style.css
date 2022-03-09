@@ -14,28 +14,30 @@
   }
 }
 .col ul {
+  background-color: whitesmoke;
   text-decoration: none;
   list-style: none;
-  border: solid 1px #4d7777;
+  border: solid 1px rgba(214, 201, 175, 0.589);
   border-radius: 3px;
   padding: 14px;
 }
 .col ul li {
   font-size: 20px;
-  color: #4d7777;
+  color: rgba(221, 154, 54, 0.822);
 }
 .col ul li a {
-  color: #4d7777;
+  color: rgba(173, 83, 10, 0.705);
 }
 .col ul li a:hover {
-  color: #ccc5a7;
+  color: rgba(214, 201, 175, 0.589);
   font-size: 20px;
 }
 .col ul li a .button-productos {
-  background-color: #ece5dc;
+  background-color: rgba(214, 201, 175, 0.589);
+  font-size: 15px;
   border-radius: 3px;
   border: solid 1px whitesmoke;
-  color: #4d7777;
+  color: rgba(19, 17, 14, 0.767);
 }
 .col ul li a .button-productos:hover {
   padding: 3px;
@@ -43,14 +45,14 @@
 }
 
 header .encabezado, main .encabezado, footer .encabezado {
-  background-color: #4d7777;
-  color: whitesmoke;
+  background-color: rgba(151, 142, 124, 0.589);
+  color: rgba(19, 17, 14, 0.767);
   font-size: 18px;
   letter-spacing: 2px;
   padding: 20px 0px;
 }
 
-footer .ul-foot, #locales, #nosotros, .col {
+#locales, #nosotros, .col, footer .ul-foot {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,13 +60,13 @@ footer .ul-foot, #locales, #nosotros, .col {
 }
 
 #locales .locales, #productos .card {
-  background-color: #ece5dc;
-  color: #4d7777;
+  background-color: whitesmoke;
+  color: rgba(173, 83, 10, 0.705);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   padding: 10px;
   border-radius: 5px;
-  border: solid 2px whitesmoke;
+  border: solid 2px rgba(214, 201, 175, 0.589);
 }
 
 @media screen and (max-width: 576px) {
@@ -74,9 +76,9 @@ footer .ul-foot, #locales, #nosotros, .col {
 }
 
 main h1 {
-  color: #4d7777;
+  color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: whitesmoke;
+  background-color: rgba(221, 154, 54, 0.822);
   padding: 30px 0px;
 }
 
@@ -86,10 +88,14 @@ ul li {
 ul li a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-decoration: none;
-  color: #ccc5a7;
+  color: rgba(214, 201, 175, 0.589);
 }
 ul li a:hover {
-  color: #4d7777;
+  color: rgba(19, 17, 14, 0.767);
+}
+
+.color-link:active {
+  background-color: rgba(221, 154, 54, 0.822);
 }
 
 .secciones {
@@ -99,7 +105,7 @@ ul li a:hover {
 
 #nosotros .parrafo-nosotros {
   font-size: 20px;
-  color: #4d7777;
+  color: rgba(19, 17, 14, 0.767);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
 }
@@ -111,7 +117,6 @@ ul li a:hover {
 }
 @media screen and (max-width: 576px) {
   #productos {
-    /*reveeeer*/
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -122,19 +127,6 @@ ul li a:hover {
 .card-img-top:hover {
   transform: translate(5px, 3%);
   transition: all 0.5s;
-}
-
-.card::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-image: url(images/aros.jpg);
-  background-size: 100% 100%;
-  filter: blur(15px) saturate(2);
 }
 
 .card-img-top {
@@ -148,7 +140,19 @@ ul li a:hover {
 }
 
 .form {
-  padding: 20px 460px;
+  padding: 0px 40px;
+}
+@media screen and (max-width: 576px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+}
+
+.ul-footer li a {
+  color: rgba(173, 83, 10, 0.705);
 }
 
 /*# sourceMappingURL=style.css.map */

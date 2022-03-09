@@ -2,6 +2,9 @@
 @import 'base/variables';
 @import 'base/listas';
 @import 'base/extends';
+@import 'base/maps';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
 
 
 header, main, footer {
@@ -15,10 +18,11 @@ header, main, footer {
 
 main{
     h1 {
-        color:nth($colores, 1 );
-        font-family: $font-family;
-        background-color: nth($colores, 3 );
-        padding: 30px 0px;
+        color: map-get($h1,color-h1);
+        font-family: map-get($h1,font-family-h1);
+        background-color: map-get($h1,bg-color-h1);
+        padding: map-get($h1, padding-h1);
+        font-family: 'Oswald', sans-serif;
     }
 }
 
@@ -31,14 +35,18 @@ ul{
             text-decoration: none;
             color:nth($colores, 5);
                 &:hover{
-                color:nth($colores, 1);
-                
+                color:nth($colores, 4);
                 }
         
         }
     }
 }
       
+.color-link{
+    &:active{
+        background-color: rgba(221, 154, 54, 0.822);
+    }
+}
 .secciones{
     width: 100%;
     margin: 60px 0px;
@@ -47,7 +55,7 @@ ul{
     @extend %flex-column;
     .parrafo-nosotros{
         font-size: nth($fuentes , 3);
-        color: nth($colores,1);
+        color: nth($colores,4);
         font-family: $font-family;
         line-height: 1.5;
     }
@@ -73,25 +81,11 @@ ul{
     transform:translate(5px, 3%);
     transition:all 0.5s;
   } 
-   
-  .card::after {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    background-image: url(images/aros.jpg);
-    background-size: 100% 100%;
-    filter: blur(15px) saturate(2); 
-  }
     
-  .card-img-top {
+.card-img-top {
     display: block;
     width: 100%;
-    height: auto;
-    
+    height: auto;  
   }
 
 #locales{
@@ -103,19 +97,24 @@ ul{
 }
 
 .form{
-    padding:20px 460px;
-}
+    padding: 0px 40px;
+    @media screen and (max-width:576px){
+        
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            padding: 10px;
+        }
+    }
+    
 
-@media screen and (max-width:576px){
-    .form{
-        @extend %flex-column;
-        padding:14px;
+.ul-footer{
+    li{
+        a{
+            color: nth($colores, 6);
+        }
     }
 }
-
-footer{
-    .ul-foot{
-        @extend %flex-column;
-    }
+.form{
+    font-family: 'Oswald', sans-serif;
 }
-
