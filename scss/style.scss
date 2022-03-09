@@ -3,7 +3,7 @@
 @import 'base/listas';
 @import 'base/extends';
 @import 'base/maps';
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200&family=Prompt:wght@200;300&family=Shippori+Antique+B1&display=swap');
 
 
 
@@ -12,7 +12,7 @@ header, main, footer {
         @extend %encabezados;
         }
         @media screen and (max-width:576px){
-            font-size:nth($fuentes ,1 );   
+            font-size:nth($fuentes ,1 );      
         }
     }
 
@@ -22,7 +22,7 @@ main{
         font-family: map-get($h1,font-family-h1);
         background-color: map-get($h1,bg-color-h1);
         padding: map-get($h1, padding-h1);
-        font-family: 'Oswald', sans-serif;
+        font-family:$font-family-d;
     }
 }
 
@@ -31,7 +31,7 @@ ul{
     li{
         list-style:none;
         a{
-            font-family: $font-family;
+            font-family: $font-family-u;
             text-decoration: none;
             color:nth($colores, 5);
                 &:hover{
@@ -44,7 +44,7 @@ ul{
       
 .color-link{
     &:active{
-        background-color: rgba(221, 154, 54, 0.822);
+        background-color: rgba(214, 201, 175, 0.589);
     }
 }
 .secciones{
@@ -56,7 +56,7 @@ ul{
     .parrafo-nosotros{
         font-size: nth($fuentes , 3);
         color: nth($colores,4);
-        font-family: $font-family;
+        font-family: $font-family-d;
         line-height: 1.5;
     }
 }
@@ -114,7 +114,4 @@ ul{
             color: nth($colores, 6);
         }
     }
-}
-.form{
-    font-family: 'Oswald', sans-serif;
 }

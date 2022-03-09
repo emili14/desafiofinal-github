@@ -30,8 +30,9 @@
     
     li{
       font-size: nth($fuentes,3);
-      color:nth($colores,3);
+      color:nth($colores,4);
       a{
+        font-family: $font-family-d;
         color:nth($colores,6);
       
         &:hover{
@@ -40,7 +41,7 @@
         }
         .button-productos{
           background-color:nth($colores,5);
-          font-size: nth($fuentes,2 );
+          font-size: nth($fuentes,2);
           border-radius: 3px;
           border: solid 1px whitesmoke;
           color:nth($colores, 4);
