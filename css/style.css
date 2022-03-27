@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200&family=Prompt:wght@200;300&family=Shippori+Antique+B1&display=swap");
-.carrito {
+.wsp {
   border-radius: 102px;
-  animation: carrito 3s;
+  animation: wsp 3s;
   animation-iteration-count: 4;
   animation-direction: alternate-reverse;
 }
 
-@keyframes carrito {
+@keyframes wsp {
   from {
     transform: translateY(120px);
   }
@@ -16,9 +16,8 @@
 }
 .col ul {
   background-color: whitesmoke;
-  text-decoration: none;
   list-style: none;
-  border: solid 1px rgba(214, 201, 175, 0.589);
+  border: solid 1px #a59f94;
   border-radius: 3px;
   padding: 14px;
 }
@@ -28,33 +27,39 @@
 }
 .col ul li a {
   font-family: "Shippori Antique B1", sans-serif;
-  color: rgba(173, 83, 10, 0.705);
+  color: rgba(82, 99, 88, 0.781);
+  text-decoration: none;
 }
 .col ul li a:hover {
-  color: rgba(214, 201, 175, 0.589);
+  color: #a59f94;
   font-size: 20px;
 }
-.col ul li a .button-productos {
-  background-color: rgba(214, 201, 175, 0.589);
-  font-size: 15px;
-  border-radius: 3px;
-  border: solid 1px whitesmoke;
-  color: rgba(19, 17, 14, 0.767);
+section .texto-carrito {
+  font-family: "Shippori Antique B1", sans-serif;
+  line-height: 2;
+  letter-spacing: 1;
+  padding: 50px 40px;
+  font-size: 20px;
 }
-.col ul li a .button-productos:hover {
-  padding: 3px;
-  opacity: 0.7;
+@media screen and (max-width: 576px) {
+  section .texto-carrito {
+    font-size: 15px;
+  }
+}
+
+.medios-de-pago a:hover {
+  opacity: 0.5;
 }
 
 header .encabezado, main .encabezado, footer .encabezado {
-  background-color: rgba(151, 142, 124, 0.589);
+  background-color: rgba(184, 175, 155, 0.651);
   color: rgba(19, 17, 14, 0.767);
   font-size: 18px;
   letter-spacing: 2px;
   padding: 20px 0px;
 }
 
-#locales, #nosotros, .col, footer .ul-foot {
+#locales, #nosotros, .col {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,42 +68,42 @@ header .encabezado, main .encabezado, footer .encabezado {
 
 #locales .locales, #productos .card {
   background-color: whitesmoke;
-  color: rgba(173, 83, 10, 0.705);
+  color: rgba(114, 82, 56, 0.705);
   font-family: "Shippori Antique B1", sans-serif;
   font-size: 20px;
   padding: 10px;
   border-radius: 5px;
-  border: solid 2px rgba(214, 201, 175, 0.589);
+  border: solid 2px #a59f94;
+}
+
+.col ul li a .button-productos {
+  background-color: #a59f94;
+  font-size: 15px;
+  border-radius: 3px;
+  border: solid 1px whitesmoke;
+  color: whitesmoke;
+}
+.col ul li a .button-productos:hover {
+  padding: 3px;
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 576px) {
   header, main, footer {
-    font-size: 12px;
+    font-size: 20px;
   }
 }
 
-main h1 {
-  color: white;
+main .h1 {
+  color: whitesmoke;
   font-family: "Shippori Antique B1", sans-serif;
-  background-color: rgba(221, 154, 54, 0.822);
+  background-color: rgba(82, 99, 88, 0.781);
   padding: 30px 0px;
   font-family: "Shippori Antique B1", sans-serif;
 }
 
-ul li {
-  list-style: none;
-}
-ul li a {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-decoration: none;
-  color: rgba(214, 201, 175, 0.589);
-}
-ul li a:hover {
-  color: rgba(19, 17, 14, 0.767);
-}
-
 .color-link:active {
-  background-color: rgba(214, 201, 175, 0.589);
+  background-color: rgba(82, 99, 88, 0.781);
 }
 
 .secciones {
@@ -108,11 +113,11 @@ ul li a:hover {
 
 #nosotros .parrafo-nosotros {
   font-size: 20px;
-  color: rgba(19, 17, 14, 0.767);
+  color: rgba(82, 99, 88, 0.781);
   font-family: "Shippori Antique B1", sans-serif;
   line-height: 1.5;
+  margin: 60px 20px;
 }
-
 #productos .card {
   width: 280px;
   height: 400px;
@@ -143,19 +148,73 @@ ul li a:hover {
 }
 
 .form {
-  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 300px;
 }
 @media screen and (max-width: 576px) {
   .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 40px 40px;
   }
 }
 
-.ul-footer li a {
-  color: rgba(173, 83, 10, 0.705);
+footer .ul-footer ul {
+  list-style: none;
+}
+footer .ul-footer ul li a {
+  color: rgba(114, 82, 56, 0.705);
+  text-decoration: none;
+  line-height: 2;
+}
+footer .ul-footer ul li a:hover {
+  color: rgba(82, 99, 88, 0.781);
+}
+@media screen and (max-width: 576px) {
+  footer .ul-footer ul li a {
+    font-size: 12px;
+  }
+}
+
+footer .ul-foot {
+  align-items: center;
+}
+footer .ul-foot ul {
+  list-style: none;
+}
+footer .ul-foot ul li {
+  font-size: 15px;
+  font-family: "Shippori Antique B1", sans-serif;
+  color: rgba(82, 99, 88, 0.781);
+  display: flex;
+  justify-content: center;
+}
+footer .ul-foot ul li a {
+  text-decoration: none;
+}
+footer .ul-foot ul li a:hover {
+  opacity: 0.5;
+}
+
+footer .contactanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  footer .contactanos {
+    font-size: 12px;
+    display: none;
+  }
+}
+footer .contactanos .texto-footer {
+  font-family: "Shippori Antique B1", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(114, 82, 56, 0.705);
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,14 +32,14 @@
 
     <!--Nav bar-->
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="images/logo1.png" alt="logo1" width="150" height="80"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-            <ul class="navbar-nav fs-5">
+            <ul class="navbar-nav fs-6">
 
               <li class="nav-item">
 
@@ -55,7 +55,7 @@
 
               <li class="nav-item">
 
-                <a class="nav-link" href="#locales">Locales</a>
+                <a class="nav-link" href="#locales">Local</a>
 
               </li>
 
@@ -82,6 +82,9 @@
                 </ul>
 
               </li>
+              <li class="nav-item">
+                <a class="p-0 nav-link" href="pages/carrito.html"><img src="images/carrito1.jpg" alt="carrito" width="40" height="40"></a>
+              </li>
 
             </ul>
 
@@ -101,7 +104,7 @@
 
   <main>
 
-    <h1 class="text-center">- N e w   S e a s o n `22 -</h1>
+    <h1 class=" h1 text-center">- N e w   S e a s o n `22 -</h1>
 
       <!--Carousel-->
 
@@ -131,21 +134,20 @@
 
     </section>
 
-    <hr>
+    
 
      <!-- Fin Carousel-->
      
      <!-- seccion Nosotros-->
 
-      <section id="nosotros" class="nosotros container"> 
+      <section id="nosotros" class="Nosotros"> 
 
-        <h4 class="secciones parrafo-nosotros text-center">Somos dos hermanas, amantes de la moda. Siempre soñamos con tener nuestra propia marca de ropa, incluso desde muy chiquitas jugábamos a "la vendedora" y podíamos estar horas así. Un día, ya teniendo unos veinte años nos lanzamos sin saber qué rumbo tomaría nuestro emprendimiento. Hoy estamos súper felices y agradecidas con nuestras clientas y queremos que cada una pueda sentirse única con los productos que les ofrecemos. "Siempre, siempre, siempre cree en ti misma. Porque si no lo haces, ¿quién lo hará, cariño?".<strong>Marilyn Monroe.</strong></h4>
+        <h4 class="secciones parrafo-nosotros text-center container-fluid">Somos dos hermanas, amantes de la moda. Siempre soñamos con tener nuestra propia marca de ropa, incluso desde muy chiquitas jugábamos a "la vendedora" y podíamos estar horas así. Un día, ya teniendo unos veinte años nos lanzamos sin saber qué rumbo tomaría nuestro emprendimiento. Hoy estamos súper felices y agradecidas con nuestras clientas y queremos que cada una pueda sentirse única con los productos que les ofrecemos. "Siempre, siempre, siempre cree en ti misma. Porque si no lo haces, ¿quién lo hará, cariño?".<strong>Marilyn Monroe.</strong></h4>
 
-        <img src="images/doshermanas.jpg" alt="dueñas del showroom" width="500" height="370">
+        <img src="images/doshermanas.jpg" alt="dueñas del showroom" class="container-fluid">
 
       </section>
 
-      <hr>
 
      <!-- Fin seccion Nosotros-->
 
@@ -210,13 +212,13 @@
 
       <!-- seccion Locales-->
 
-      <h3 class="encabezado fs-5 text-center">NUESTROS LOCALES</h3>
+      <h3 class="encabezado fs-5 text-center">NUESTRO LOCAL</h3>
 
       <section id="locales" class="secciones container-fluid text-center">
 
           <div class="col">
 
-            <div class="row-4">
+            <div class="row-6">
 
               <p class="fs-6 fw-bold locales">TUCUMAN</p>
 
@@ -224,21 +226,11 @@
 
             </div>
 
-            <div class="row-4">
-
-              <p class="fs-6 fw-bold locales">CORDOBA</p>
-
-              <p class="fs-6">Shopping Nueva Córdoba-Lunes a Domingos de 10 a 21 hs</p>
-
+            <div class="row-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.8551769671935!2d-65.29751428571865!3d-26.812739595498297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942242d70e26d285%3A0xec12e09b93c231ac!2sYerba%20Buena%20Shopping!5e0!3m2!1ses-419!2sar!4v1648295204574!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="row-4">
-
-             <p class="fs-6 fw-bold locales">ROSARIO</p>
-
-             <p class="fs-6">Alto Rosario Shopping-Lunes a Domingos de 10 a 21 hs</p>
-
-            </div>
+          
 
         </div>
 
@@ -253,9 +245,9 @@
 
     <section  id="contacto" class="form secciones">
 
-      <div class="mb-3">
+      <div class="mb-3 col-sm">
 
-        <label for="exampleFormControlInput1" class="form-label fs-6">E-mail</label>
+        <label for="exampleFormControlInput1" class="form-label fs-5">E-mail</label>
 
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 
@@ -263,11 +255,11 @@
 
       <div class="mb-3">
 
-        <label for="exampleFormControlTextarea1" class="form-label fs-6">Tu Mensaje</label>
+        <label for="exampleFormControlTextarea1" class="form-label fs-5">Tu Mensaje</label>
 
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
 
-        <button type="button" class="btn btn-light color-link">Enviar</button>
+        <button type="button" class="btn btn-light color-link fs-5">Enviar</button>
 
       </div>
 
@@ -285,11 +277,11 @@
 
     <p class="encabezado text-center">Envíos a todo el país</p>  
 
-      <section class="d-flex justify-content-evenly">
+      <section class="footer d-flex justify-content-evenly">
 
-        <div>
+        <div class="ul-footer">
 
-            <ul class="ul-footer">
+            <ul>
 
                 <li><a href="index.html">Home</a></li>
 
@@ -305,13 +297,13 @@
 
         </div>
 
-        <div>
+        <div class="ul-foot">
 
-            <ul class="ul-foot">
+            <ul>
 
                 <li><a href="index.html"><img class="logo" src="images/logo1.png" alt="logoMalena" width="110" height="50"></a></li>
 
-                <li><p>Follow us</p></li>
+                <li>Follow us</li>
 
                 <li><a href="https://instagram.com"><img src="images/i.jpg" alt="instagramMalena" width="40" height="40"></a></li>
 
@@ -319,13 +311,13 @@
 
         </div> 
 
-        <div class="contactanos fs-6">
+        <div class="contactanos">
 
-              <p>Contactanos</p>
+             <a href="https://www.whatsapp.com/" class="texto-footer"><img src="images/wp.jpg" alt="Whatsapp" width="35" height="35">3814624344</a>
 
-              <p>Tel:1234567</p>
+             <a href="https://www.google.com/maps/place/Yerba+Buena+Shopping/@-26.8127396,-65.2975143,17z/data=!3m1!4b1!4m5!3m4!1s0x942242d70e26d285:0xec12e09b93c231ac!8m2!3d-26.8127444!4d-65.2953256" class="texto-footer">Yerba Buena Shopping</a>
 
-              <p>Yerba Buena Shopping</p> 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.8551769671935!2d-65.29751428571865!3d-26.812739595498297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942242d70e26d285%3A0xec12e09b93c231ac!2sYerba%20Buena%20Shopping!5e0!3m2!1ses-419!2sar!4v1648295819234!5m2!1ses-419!2sar" width="170" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>  
 
